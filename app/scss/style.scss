@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins";
+@import "animations";
+
+@import "config";
+@import "main";
+@import "nav";
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "nav main";
+
+    background-color: lighten($primary-color, 70%);
+    
+    
+    &.open{
+        overflow-y: hidden;
+    }
+
+    @include breakpoint-down(medium){
+        display: flex;
+        flex-direction: column;
+    }
+}

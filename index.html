@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Technical Documentation</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body class="body">
+
+    <nav id="navbar" class="navbar">
+        <header>HTML Technical Documentation</header>
+
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+        <a href="#What_is_HTML?" class="nav-link">What is HTML?</a>
+        <a href="#Metadata_in_HTML" class="nav-link">Metadata in HTML</a>
+        <a href="#Applying_CSS_and_JavaScript_to_HTML" class="nav-link">Applying CSS and JavaScript to HTML</a>
+        <a href="#HTML_text_fundamentals" class="nav-link">HTML text fundamentals</a>
+        <a href="#Creating_hyperlinks" class="nav-link">Creating hyperlinks</a>
+        <a href="#Document_and_website_structure" class="nav-link">Document and website structure</a>
+        <a href="#Reference" class="nav-link">Reference</a>
+    </nav>
+
+    <div class="mobile-header">
+        HTML Technical Documentation
+        <div class="mobile-hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+    <div class="mobile-background"></div>
+    
+        
+    <nav id="navbar-mobile" class="mobile-navbar">
+
+        <a href="#Introduction" class="nav-link-mobile">Introduction</a>
+        <a href="#Prerequisites" class="nav-link-mobile">Prerequisites</a>
+        <a href="#What_is_HTML?" class="nav-link-mobile">What is HTML?</a>
+        <a href="#Metadata_in_HTML" class="nav-link-mobile">Metadata in HTML</a>
+        <a href="#Applying_CSS_and_JavaScript_to_HTML" class="nav-link-mobile">Applying CSS and JavaScript to HTML</a>
+        <a href="#HTML_text_fundamentals" class="nav-link-mobile">HTML text fundamentals</a>
+        <a href="#Creating_hyperlinks" class="nav-link-mobile">Creating hyperlinks</a>
+        <a href="#Document_and_website_structure" class="nav-link-mobile">Document and website structure</a>
+        <a href="#Reference" class="nav-link-mobile">Reference</a>
+    </nav>
+    
+    <main class="main-doc" id="main-doc">
+
+        <section class="main-section introduction" id="Introduction">
+
+            <header>Introduction</header>
+
+            <p>
+                At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.
+            </p>
+
+        </section>
+
+        <section class="main-section prerequisites" id="Prerequisites">
+            <header>Prerequisites</header>
+
+            <p>
+                This guide assumes you have the following basic background:
+        
+                <ul>
+                    <li>You should have at least basic familiarity with using computers and using the web passively;</li>
+                    <li>You should have a basic work environment set up (as detailed in <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software">Installing basic software</a>);</li>
+                    <li>You Should understand how to create and manage files (as detailed in <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files">Dealing with files</a>).</li>
+                </ul>
+            </p> 
+
+        </section>
+
+        <section class="main-section html" id="What_is_HTML?">
+            <header>What is HTML?</header>
+
+            <p>HTML (Hypertext Markup Language) is not a programming language. It is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of <a href="https://developer.mozilla.org/en-US/docs/Glossary/Element">elements</a>, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.  For example, consider the following line of text:</p>
+            <div class="code-box"><code>My cat is very grumpy</code></div>
+            <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (<span class="code-box-text"><code>&ltp&gt</code></span>) element:</p>
+            <div class="code-box"><code>&ltp&gt My cat is very grumpy &lt/p&gt</code></div>
+
+            <ul>
+            <li>Tags in HTML are not case-sensitive. This means they can be written in uppercase or lowercase. For example, a <span class="code-box-text"><code>&lttitle&gt</code></span> tag could be written as <span class="code-box-text"><code>&lttitle&gt</code></span>, <span class="code-box-text"><code>&ltTITLE&gt</code></span>, <span class="code-box-text"><code>&lttitle&gt</code></span>, <span class="code-box-text"><code>&ltTiTlE&gt</code></span>, etc., and it will work. However, it is best practice to write all tags in lowercase for consistency and readability.</li>
+            </ul>
+
+            <p>Let's further explore our paragraph element from the previous section:</p>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png" alt="Anatomy of an HTML element">
+            <p>The anatomy of our element is:</p>
+
+            <ul>
+                <li><strong>The opening tag:</strong> This consists of the name of the element (in this example, <i>p</i> for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+                <li><strong>The content:</strong> This is the content of the element. In this example, it is the paragraph text.</li>
+                <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+            </ul>
+
+            <p>The element is the opening tag, followed by content, followed by the closing tag.</p>
+        
+        </section>
+
+        <section class="main-section metadata" id="Metadata_in_HTML">
+            <header>Metadata in HTML</header>
+
+            <p>The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page <span class="code-box-text"><code>&lttitle&gt</code></span>, links to <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a> (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document.).</p>            
+            <p>The HTML head is the contents of the <span class="code-box-text"><code>&lthead&gt</code></span> element — unlike the contents of the <span class="code-box-text"><code>&ltbody&gt</code></span> element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain <a href="https://developer.mozilla.org/en-US/docs/Glossary/Metadata">Metadata</a> about the document. In the above example, the head is quite small. In larger pages however, the head can get quite full. Try going to some of your favorite websites and use the <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">developer tools</a> to check out their head contents. Our aim here is not to show you how to use everything that can possibly be put in the head, but rather to teach you how to use the major elements that you'll want to include in the head, and give you some familiarity.</p>
+
+        </section>
+
+        <section class="main-section css_js" id="Applying_CSS_and_JavaScript_to_HTML">
+            <header>Applying CSS and JavaScript to HTML</header>
+
+            <p>Just about all websites you'll use in the modern day will employ <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">CSS</a> to make them look cool, and <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript">JavaScript</a> to power interactive functionality, such as video players, maps, games, and more. These are most commonly applied to a web page using the <span class="code-box-text"><code>&ltlink&gt</code></span> element and the <span class="code-box-text"><code>&ltscript&gt</code></span> element, respectively.</p>
+            
+            <ul>
+                <li>
+                The <span class="code-box-text"><code>&ltlink&gt</code></span> element should always go inside the head of your document. This takes two attributes, <span class="code-box-text"><code>rel="stylesheet"</code></span>, which indicates that it is the document's stylesheet, and <code>href</code>, which contains the path to the stylesheet file: <br> 
+                <div class="code-box">
+                    <code>&ltlink rel="stylesheet" href="my-css-file.css"&gt</code>
+                </div>
+                </li>
+                <li>
+                    The <span class="code-box-text"><code>&ltscript&gt</code></span> element should also go into the head, and should include a src attribute containing the path to the JavaScript you want to load, and defer, which basically instructs the browser to load the JavaScript after the page has finished parsing the HTML. This is useful as it makes sure that the HTML is all loaded before the JavaScript runs, so that you don't get errors resulting from JavaScript trying to access an HTML element that doesn't exist on the page yet. There are actually a number of ways to handle loading JavaScript on your page, but this is the most foolproof one to use for modern browsers (for others, read <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#script_loading_strategies">Script loading strategies</a>). <br>
+                    <div class="code-box">
+                        <code>&ltscript src="my-js-file.js" defer&gt&lt/script&gt</code>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="main-section text_fundamentals" id="HTML_text_fundamentals">
+            <header>HTML text fundamentals</header>
+
+            <p>One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This section explains the way <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
+            <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc. Structured content makes the reading experience easier and more enjoyable. In HTML, each paragraph has to be wrapped in a <span class="code-box-text"><code>&ltp&gt</code></span> element, like so:</p> <br>
+            <div class="code-box">
+                <code>&ltp&gtI am a paragraph, oh yes I am.&lt/p&gt</code> 
+            </div>
+            <p>Each heading has to be wrapped in a heading element:</p>
+            <div class="code-box">
+                <code>&lth1&gtI am the title of the story.&lt/h1&gt</code> 
+            </div>
+            <p>There are six heading elements: <span class="code-box-text"><code>&lth1&gt</code></span>, <span class="code-box-text"><code>&lth2&gt</code></span>, <span class="code-box-text"><code>&lth3&gt</code></span>, <span class="code-box-text"><code>&lth4&gt</code></span>, <span class="code-box-text"><code>&lth5&gt</code></span>, and <span class="code-box-text"><code>&lth6&gt</code></span>. Each element represents a different level of content in the document; <span class="code-box-text"><code>&lth1&gt</code></span> represents the main heading, <span class="code-box-text"><code>&lth2&gt</code></span> represents subheadings, <span class="code-box-text"><code>&lth3&gt</code></span> represents sub-subheadings, and so on.</p>
+            <p>It's really up to you what the elements involved represent, as long as the hierarchy makes sense. You just need to bear in mind a few best practices as you create such structures:</p>
+
+            <ul>
+                <li>Preferably, you should use a single <span class="code-box-text"><code>&lth1&gt</code></span> per page—this is the top level heading, and all others sit below this in the hierarchy.</li>
+                <li>Make sure you use the headings in the correct order in the hierarchy. Don't use <span class="code-box-text"><code>&lth3&gt</code></span> elements to represent subheadings, followed by <span class="code-box-text"><code>&lth2&gt</code></span> elements to represent sub-subheadings—that doesn't make sense and will lead to weird results.</li>
+                <li>Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (for example, a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.</li>
+            </ul>
+        </section>
+
+        <section class="main-section hyperlinks" id="Creating_hyperlinks">
+            <header>Creating hyperlinks</header>
+
+            <p>Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (<a href="https://developer.mozilla.org/en-US/docs/Glossary/URL">URL</a>).</p>
+            <p>A basic link is created by wrapping the text or other content, see <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#block_level_links">Block level links</a>, inside an <span class="code-box-text"><code>&lta&gt</code></span> element and using the <span class="code-box-text"><code>href</code></span> attribute, also known as a <strong>Hypertext Reference</strong>, or <strong>target</strong>, that contains the web address.</p>
+
+            <div class="code-box">
+                <code>
+                    &ltp&gtI'm creating a link to <br>
+                    &lta href="https://www.mozilla.org/en-US/"&gtthe Mozilla homepage&lt/a&gt. <br>
+                    &lt/p&gt
+                </code>
+            </div>
+
+            <p>This gives us the following result:</p>
+            <p>I'm creating a link to <a href="https://www.mozilla.org/en-US/">the Mozilla homepage</a>.</p>
+        
+        </section>
+
+        <section class="main-section structure" id="Document_and_website_structure">
+            <header>Document and website structure</header>
+
+            <p>In addition to defining individual parts of your page (such as "a paragraph" or "an image"), <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">HTML</a> also boasts a number of block level elements used to define areas of your website (such as "the header", "the navigation menu", "the main content column").</p>
+            <p>Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:</p>
+
+            <h3>Header:</h3>
+            <p>Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.</p>
+
+            <h3>Navigation Bar:</h3>
+            <p>Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility">accessibility</a>, as screen readers can read the two features better if they are separate.</p>
+
+            <h3>Main Content:</h3>
+            <p>A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!</p>
+
+            <h3>Sidebar:</h3>
+            <p>Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.</p>
+
+            <h3>Footer:</h3>
+            <p>A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself. The footer is also sometimes used for <a href="https://developer.mozilla.org/en-US/docs/Glossary/SEO">SEO</a> purposes, by providing links for quick access to popular content.</p>
+        </section>
+
+        <section class="main-section reference" id="Reference">
+            <header> Reference</header>
+
+            <ul>
+                <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">MDN</a>.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <script src="app/js/script.js"></script>
+</body>
+</html>

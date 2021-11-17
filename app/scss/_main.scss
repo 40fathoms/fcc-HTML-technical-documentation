@@ -1,0 +1,96 @@
+.main-doc{
+
+    font-size: $font-med;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    grid-area: main;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    
+    @include breakpoint-up(large){
+        left: 21rem;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    @include breakpoint-down(medium){
+        margin-top: 10rem;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        position: relative;
+        width: 100%;
+        font-size: $font-small;        
+    }
+
+    header{
+        font-size: $font-lg;
+        font-weight: bold;
+
+        @include breakpoint-down(medium){
+            font-size: $font-med;
+        }
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    a, a:visited{
+        text-decoration: none;
+        color: blue;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    ul{
+        text-align:justify;
+    }
+
+    .code-box{
+        background: $code;
+        padding: 1rem;
+        @include breakpoint-down(medium){
+            font-size: 0.7rem;
+        }
+    }
+
+    .code-box-text{
+        background: $code;
+        padding: 0rem 0.2rem;
+    }
+
+    .main-section{
+        background-color: $white;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .html{
+        img{
+            width: 35rem;
+            box-shadow: 7px 7px #000;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+
+            @include breakpoint-down(medium){
+                width: 100%;
+            }
+        }
+    }
+
+    .hyperlinks{
+
+        .code-box{
+            @include breakpoint-down(medium){
+                width: 100%;
+            }
+            word-wrap: break-word;
+        }
+    }
+}
